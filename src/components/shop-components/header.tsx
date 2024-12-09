@@ -20,7 +20,7 @@ const Header = () => {
     <header className="bg-white shadow-md py-4">
       <div className="container mx-auto flex items-center justify-between px-4">
         {/* Logo */}
-        <div className="text-[24px] font-bold text-[#252B42] mr-8">
+        <div className="text-4xl font-bold text-[#252B42] mr-8">
           {" "}
           {/* Add mr-8 for margin-right */}
           Bandage
@@ -28,7 +28,7 @@ const Header = () => {
 
         {/* Navbar (Desktop) */}
         <nav className="hidden md:flex flex-row items-center gap-8 text-[14px] text-[#737373] font-bold ml-20">
-          <ul className="list-none flex gap-8">
+          <ul className="list-none flex gap-8 text-lg">
             {" "}
             {/* Add list-none here to remove dots */}
             <Link href="/">

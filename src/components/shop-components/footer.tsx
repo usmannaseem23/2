@@ -7,7 +7,7 @@ const Footer = () => {
     <footer className="py-6 bg-white">
       <div className="flex justify-between items-center py-12 px-10 mx-auto max-w-screen-xl bg-[#FAFAFA]">
         {/* Left: Text */}
-        <h2 className="text-[24px] font-bold text-[#252B42]">Bandage</h2>
+        <h2 className="text-4xl font-bold text-[#252B42]">Bandage</h2>
 
         {/* Right: Icons */}
         <div className="flex space-x-6">
@@ -30,8 +30,8 @@ const Footer = () => {
         <div className="flex flex-col lg:flex-row items-start justify-between gap-6">
           {/* Company Info */}
           <div className="flex-1 min-w-[120px]">
-            <h3 className="text-lg font-bold text-[#252B42] text-[16px] mb-2">Company Info</h3>
-            <ul className="text-[#737373] space-y-1 text-[14px] font-bold">
+            <h3 className="text-xl font-bold text-[#252B42] text-[16px] mb-2">Company Info</h3>
+            <ul className="text-[#737373] space-y-1 text-lg font-bold">
               <li><Link href="#" className="hover:underline">About Us</Link></li>
               <li><Link href="#" className="hover:underline">Carrier</Link></li>
               <li><Link href="#" className="hover:underline">We are hiring</Link></li>
@@ -41,8 +41,8 @@ const Footer = () => {
 
           {/* Legal */}
           <div className="flex-1 min-w-[120px]">
-            <h3 className="text-lg font-bold text-[#252B42] text-[16px] mb-2">Legal</h3>
-            <ul className="text-[#737373] space-y-1 text-[14px] font-bold">
+            <h3 className="text-xl font-bold text-[#252B42] text-[16px] mb-2">Legal</h3>
+            <ul className="text-[#737373] space-y-1 text-lg font-bold">
               <li><Link href="#" className="hover:underline">Terms of Service</Link></li>
               <li><Link href="#" className="hover:underline">Privacy Policy</Link></li>
               <li><Link href="#" className="hover:underline">Cookie Policy</Link></li>
@@ -52,8 +52,8 @@ const Footer = () => {
 
           {/* Features */}
           <div className="flex-1 min-w-[120px]">
-            <h3 className="text-lg font-bold text-[#252B42] text-[16px] mb-2">Features</h3>
-            <ul className="text-[#737373] space-y-1 text-[14px] font-bold">
+            <h3 className="text-xl font-bold text-[#252B42] text-[16px] mb-2">Features</h3>
+            <ul className="text-[#737373] space-y-1 text-lg font-bold">
               <li><Link href="#" className="hover:underline">Business Marketing</Link></li>
               <li><Link href="#" className="hover:underline">User Analytics</Link></li>
               <li><Link href="#" className="hover:underline">Live Chat</Link></li>
@@ -63,8 +63,8 @@ const Footer = () => {
 
           {/* Resources */}
           <div className="flex-1 min-w-[120px]">
-            <h3 className="text-lg font-bold text-[#252B42] text-[16px] mb-2">Resources</h3>
-            <ul className="text-[#737373] space-y-1 text-[14px] font-bold">
+            <h3 className="text-xl font-bold text-[#252B42] text-[16px] mb-2">Resources</h3>
+            <ul className="text-[#737373] space-y-1 text-lg font-bold">
               <li><Link href="#" className="hover:underline">iOS & Android</Link></li>
               <li><Link href="#" className="hover:underline">Watch a Demo</Link></li>
               <li><Link href="#" className="hover:underline">Customers</Link></li>
@@ -74,7 +74,7 @@ const Footer = () => {
 
           {/* Get in Touch */}
           <div className="flex-1 min-w-[150px]">
-            <h3 className="text-lg font-bold text-[#252B42] text-[16px] mb-2">Get In Touch</h3>
+            <h3 className="text-xl font-bold text-[#252B42] text-[16px] mb-2">Get In Touch</h3>
             <div>
               <div className="flex">
                 <input
@@ -93,7 +93,7 @@ const Footer = () => {
 
         {/* Bottom Text */}
         <div className="mt-16 text-left bg-[#FAFAFA] py-9">
-          <p className="text-[#737373] font-bold text-[14px]">Made With Love By Muhammad Ubaid Hussain. All Rights Reserved</p>
+          <p className="text-[#737373] font-bold text-[14px]">Made With Love All Rights Reserved</p>
         </div>
       </div>
     </footer>

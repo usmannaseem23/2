@@ -24,7 +24,7 @@ const MeetTeam: React.FC = () => {
         instagram: "#",
         twitter: "#",
       },
-      image: "/team-member3.png",
+      image: "/images/aboutus/team-member3.png",
     },
     {
       name: "Jane Smith",
@@ -34,7 +34,7 @@ const MeetTeam: React.FC = () => {
         instagram: "#",
         twitter: "#",
       },
-      image: "/team-member4.png",
+      image: "/images/aboutus/team-member4.png",
     },
     {
       name: "Sam Wilson",
@@ -44,7 +44,7 @@ const MeetTeam: React.FC = () => {
         instagram: "#",
         twitter: "#",
       },
-      image: "/team-member1.png",
+      image: "/images/aboutus/team-member1.png",
     },
   ];
 

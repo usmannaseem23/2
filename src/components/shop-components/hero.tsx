@@ -18,7 +18,7 @@ export default function Hero() {
         {/* First Image taking 2 columns */}
         <div className="md:col-span-2">
           <Image
-            src="/team1.png"
+            src="/images/pages/team1.png"
             alt="team"
             height={530}
             width={700}
@@ -29,7 +29,7 @@ export default function Hero() {
         {/* Remaining Images in 1 row */}
         <div className="md:col-span-1">
           <Image
-            src="/team2.png"
+            src="/images/pages/team2.png"
             alt="team"
             height={260}
             width={361}
@@ -38,7 +38,7 @@ export default function Hero() {
         </div>
         <div className="md:col-span-1">
           <Image
-            src="/team3.png"
+            src="/images/pages/team3.png"
             alt="team"
             height={260}
             width={361}
@@ -47,7 +47,7 @@ export default function Hero() {
         </div>
         <div className="md:col-span-1">
           <Image
-            src="/team4.png"
+            src="/images/pages/team4.png"
             alt="team"
             height={260}
             width={361}
@@ -56,7 +56,7 @@ export default function Hero() {
         </div>
         <div className="md:col-span-1">
           <Image
-            src="/team5.png"
+            src="/images/pages/team5.png"
             alt="team"
             height={260}
             width={361}

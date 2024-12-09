@@ -1,5 +1,5 @@
 import EditorsPics from "@/components/editors-pics";
-import FeatureProducts from "@/components/feature-products";
+import FeatureProducts from "@/components/featuresproducts";
 import FeauresPosts from "@/components/feaures-posts";
 import Hero from "@/components/hero";
 import Header from "@/components/header";

@@ -25,7 +25,7 @@ const Work = () => {
         {/* Image Section */}
         <div className="hidden md:block md:w-1/2">
           <Image
-            src="/work.png"
+            src="/images/aboutus/work.png"
             alt="work"
             height={300}
             width={590}

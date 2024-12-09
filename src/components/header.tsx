@@ -4,10 +4,6 @@ import { useState } from "react";
 import {
   FiPhone,
   FiMail,
-  FiInstagram,
-  FiYoutube,
-  FiFacebook,
-  FiTwitter,
   FiSearch,
   FiShoppingCart,
   FiHeart,
@@ -15,6 +11,13 @@ import {
   FiMenu,
   FiX,
 } from "react-icons/fi";
+import {
+  faInstagram,
+  faYoutube,
+  faFacebook,
+  faTwitter,
+} from "@fortawesome/free-brands-svg-icons";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -25,7 +28,7 @@ const Header = () => {
       <div className="bg-[#252B42] py-4 hidden lg:block">
         <div className="container mx-auto flex justify-between items-center text-white text-sm">
           {/* Contact Information */}
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-4 text-lg">
             <div className="flex items-center gap-1">
               <FiPhone />
               <p>(225) 555-0118</p>
@@ -37,50 +40,50 @@ const Header = () => {
           </div>
 
           {/* Promotion */}
-          <p className="hidden md:block">
+          <p className="hidden md:block font-extrabold text-xl">
             Follow Us and get a chance to win 80% off
           </p>
 
           {/* Social Media Links */}
-          <div className="flex items-center gap-4">
+          <div className="flex items-center gap-4 text-lg">
             <p className="hidden md:block">Follow Us:</p>
             <Link
-              href="https://www.instagram.com"
+              href="https://www.instagram.com/usman_naseem23/?hl=en"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FiInstagram />
+              <FontAwesomeIcon icon={faInstagram} />
             </Link>
             <Link
               href="https://www.youtube.com"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FiYoutube />
+              <FontAwesomeIcon icon={faYoutube} />
             </Link>
             <Link
-              href="https://www.facebook.com"
+              href="https://www.facebook.com/profile.php?id=100086418654475"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FiFacebook />
+              <FontAwesomeIcon icon={faFacebook} />
             </Link>
             <Link
               href="https://www.twitter.com"
               target="_blank"
               rel="noopener noreferrer"
             >
-              <FiTwitter />
+              <FontAwesomeIcon icon={faTwitter} />
             </Link>
           </div>
         </div>
       </div>
 
-      {/* Navbar Section */}
-      <div className="bg-white shadow-md border-b-2 border-[#E5E5E5] relative z-40">
+     {/* Navbar Section */}
+     <div className="bg-white shadow-md border-b-2 border-[#E5E5E5] relative z-40">
         <div className="container mx-auto flex items-center justify-between py-4">
           {/* Logo */}
-          <div className="text-2xl font-bold text-[#252B42]">Bandage</div>
+          <div className="text-4xl font-bold text-[#252B42]">Bandage</div>
 
           {/* Action Icons (Mobile and Desktop) */}
           <div className="flex items-center gap-4 md:hidden">
@@ -100,9 +103,9 @@ const Header = () => {
 
           {/* Navigation Links */}
           <nav className="hidden md:flex">
-            <ul className="flex gap-8 text-sm font-medium text-[#737373] relative">
+            <ul className="flex gap-8  font-medium text-[#737373] relative text-lg">
               <li>
-                <Link href="#" className="hover:text-[#23A6F0] transition-all">
+                <Link href="#" className="hover:text-[#23A6F0] transition-all ">
                   Home
                 </Link>
               </li>
@@ -145,8 +148,8 @@ const Header = () => {
           </nav>
 
           {/* Action Icons for Desktop */}
-          <div className="hidden md:flex items-center gap-6 text-[#23A6F0]">
-            <button className="text-sm font-medium">Login/Register</button>
+          <div className="hidden md:flex items-center gap-6 text-[#23A6F0] ">
+            <button className="text-lg font-medium">Login/Register</button>
             <FiSearch className="text-lg cursor-pointer" />
             <FiShoppingCart className="text-lg cursor-pointer" />
             <FiHeart className="text-lg cursor-pointer" />
