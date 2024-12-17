@@ -102,7 +102,7 @@ const Header = () => {
           </Link>
           <Link href="/product">
             <li className="cursor-pointer hover:text-[#23A6F0] transition-all">
-              Product
+              Shop
             </li>
           </Link>
           <Link href="/pricing">

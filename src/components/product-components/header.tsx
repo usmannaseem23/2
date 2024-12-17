@@ -3,14 +3,11 @@ import Link from "next/link";
 import { useState } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
-  faInstagram,
-  faYoutube,
-  faFacebook,
-  faTwitter,
-} from "@fortawesome/free-brands-svg-icons";
-import {
   FiPhone,
   FiMail,
+  FiInstagram,
+  FiFacebook,
+  FiTwitter,
   FiSearch,
   FiShoppingCart,
   FiHeart,
@@ -18,6 +15,9 @@ import {
   FiMenu,
   FiX,
 } from "react-icons/fi";
+import {  faInstagram, faYoutube, faFacebook, faTwitter } from "@fortawesome/free-brands-svg-icons"; // Importing FontAwesome icons
+
+import { FaYoutube } from "react-icons/fa";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -28,52 +28,36 @@ const Header = () => {
       <div className="bg-[#23856D] py-4 hidden lg:block">
         <div className="container mx-auto flex justify-between items-center text-white text-sm">
           {/* Contact Information */}
-          <div className="flex text-lg items-center gap-4">
+          <div className="flex items-center gap-4">
             <div className="flex items-center gap-1">
               <FiPhone />
               <p>(225) 555-0118</p>
             </div>
-            <div className="text-md flex items-center gap-1">
+            <div className="flex items-center gap-1">
               <FiMail />
               <p>michelle.rivera@example.com</p>
             </div>
           </div>
 
           {/* Promotion */}
-          <p className="hidden md:block font-extrabold text-xl">
+          <p className="hidden md:block text-sm lg:text-lg font-bold">
             Follow Us and get a chance to win 80% off
           </p>
 
           {/* Social Media Links */}
-          <div className="flex text-lg items-center gap-4">
-            <p className="hidden md:block">Follow Us:</p>
-            <Link
-              href="https://www.instagram.com/usman_naseem23/?hl=en"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+          <div className="flex items-center gap-4">
+            <p className="hidden md:block text-sm lg:text-lg">Follow Us:</p>
+            <Link href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
               <FontAwesomeIcon icon={faInstagram} />
             </Link>
-            <Link
-              href="https://www.youtube.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FontAwesomeIcon icon={faYoutube} />
+            <Link href="https://www.youtube.com" target="_blank" rel="noopener noreferrer">
+               <FontAwesomeIcon icon={faYoutube} />
             </Link>
-            <Link
-              href=" https://www.facebook.com/profile.php?id=100086418654475"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FontAwesomeIcon icon={faFacebook} />
+            <Link href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
+               <FontAwesomeIcon icon={faFacebook} />
             </Link>
-            <Link
-              href="https://www.twitter.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <FontAwesomeIcon icon={faTwitter} />
+            <Link href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
+            <FontAwesomeIcon icon={faTwitter} />
             </Link>
           </div>
         </div>
@@ -83,46 +67,33 @@ const Header = () => {
       <div className="bg-white shadow-md border-b-2 border-[#E5E5E5] relative z-40">
         <div className="container mx-auto flex items-center justify-between py-4">
           {/* Logo */}
-          <div className="text-4xl font-bold text-[#252B42]">Bandage</div>
+          <div className="text-2xl lg:text-3xl font-bold text-[#252B42] mr-4">Bandage</div>
 
           {/* Action Icons (Mobile and Desktop) */}
           <div className="flex items-center gap-4 md:hidden">
             <FiSearch className="text-2xl text-[#252B42] cursor-pointer" />
             <FiShoppingCart className="text-2xl text-[#252B42] cursor-pointer" />
-            <button
-              onClick={() => setIsMenuOpen(!isMenuOpen)}
-              aria-label="Toggle menu"
-            >
-              {isMenuOpen ? (
-                <FiX className="text-3xl text-[#252B42]" />
-              ) : (
-                <FiMenu className="text-3xl text-[#252B42]" />
-              )}
+            <button onClick={() => setIsMenuOpen(!isMenuOpen)} aria-label="Toggle menu">
+              {isMenuOpen ? <FiX className="text-3xl text-[#252B42]" /> : <FiMenu className="text-3xl text-[#252B42]" />}
             </button>
           </div>
 
           {/* Navigation Links */}
-          <nav className="hidden md:flex">
-            <ul className="flex gap-8  font-medium text-[#737373] relative text-lg">
+          <nav className="hidden md:flex flex-grow justify-center gap-8 text-sm font-medium text-[#737373]">
+            <ul className="flex gap-8 relative text-sm md:text-base lg:text-lg">
               <li>
                 <Link href="/" className="hover:text-[#23A6F0] transition-all">
                   Home
                 </Link>
               </li>
               <li className="relative group">
-                <Link
-                  href="/product"
-                  className="flex items-center gap-1 hover:text-[#23A6F0] transition-all"
-                >
+                <Link href="/product" className="flex items-center gap-1 hover:text-[#23A6F0] transition-all">
                   Shop
                   <FiChevronDown />
                 </Link>
               </li>
               <li>
-                <Link
-                  href="/about"
-                  className="hover:text-[#23A6F0] transition-all"
-                >
+                <Link href="/about" className="hover:text-[#23A6F0] transition-all">
                   About
                 </Link>
               </li>
@@ -132,10 +103,7 @@ const Header = () => {
                 </Link>
               </li>
               <li>
-                <Link
-                  href="/contact"
-                  className="hover:text-[#23A6F0] transition-all"
-                >
+                <Link href="/contact" className="hover:text-[#23A6F0] transition-all">
                   Contact
                 </Link>
               </li>
@@ -148,8 +116,10 @@ const Header = () => {
           </nav>
 
           {/* Action Icons for Desktop */}
-          <div className="hidden md:flex items-center gap-6 text-[#23A6F0]">
-            <button className="text-lg font-medium">Login/Register</button>
+          <div className="hidden md:flex items-center gap-6 text-[#23A6F0] ml-auto">
+            <button className="text-sm md:text-base lg:text-lg font-medium mr-6 hidden lg:block">
+              Login/Register
+            </button>
             <FiSearch className="text-lg cursor-pointer" />
             <FiShoppingCart className="text-lg cursor-pointer" />
             <FiHeart className="text-lg cursor-pointer" />
@@ -174,18 +144,12 @@ const Header = () => {
               </Link>
             </li>
             <li>
-              <Link
-                href="/pricing"
-                className="hover:text-[#23A6F0] transition-all"
-              >
+              <Link href="/about" className="hover:text-[#23A6F0] transition-all">
                 Pricing
               </Link>
             </li>
             <li>
-              <Link
-                href="/contact"
-                className="hover:text-[#23A6F0] transition-all"
-              >
+              <Link href="/contact" className="hover:text-[#23A6F0] transition-all">
                 Contact
               </Link>
             </li>

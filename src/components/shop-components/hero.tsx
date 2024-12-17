@@ -1,3 +1,4 @@
+import Link from "next/link";
 import Image from "next/image";
 import { FiChevronRight } from "react-icons/fi";
 
@@ -9,7 +10,10 @@ export default function Hero() {
         Innovation tailored for you
       </h1>
       <p className="text-[#252B42] mt-5 font-bold text-[14px] flex justify-center items-center gap-1">
-        Home <FiChevronRight className="text-[#BDBDBD] text-[25px]" />{" "}
+        <Link href="/" className="hover:text-[#23A6F0]">
+          Home
+        </Link>{" "}
+        <FiChevronRight className="text-[#BDBDBD] text-[25px]" />{" "}
         <span className="text-[#737373]">Team</span>
       </p>
 

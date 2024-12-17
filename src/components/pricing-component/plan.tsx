@@ -241,7 +241,7 @@ const Plan = () => {
         </h3>
         <div className="flex justify-center items-center mt-6">
           <Image
-            src={"/companies.png"}
+            src={"/images/product/companies.png"}
             alt="companies"
             width={1054}
             height={175}

@@ -8,7 +8,7 @@ const FeauresPosts = () => {
       <div className="text-center mb-20">
         <h3 id="blog" className="text-[#23A6F0] text-[14px] font-bold">Practice Advice</h3>
         <h2 className="text-[#252B42] text-[40px] font-bold">Featured Posts</h2>
-        <p className="text-[#737373] text-lg]">
+        <p className="text-[#737373] text-lg">
           Problems trying to resolve the conflict between <br />
           the two major realms of Classical physics: Newtonian mechanics
         </p>
@@ -17,7 +17,7 @@ const FeauresPosts = () => {
       {/* Flex container for centering the posts */}
       <div className="flex flex-wrap justify-center items-center gap-8">
         {/* Post Template for Reusability */}
-        {["post1.png", "post2.png", "post3.png"].map((blog, index) => (
+        {["/images/featurepost/post1.png", "/images/featurepost/post2.png", "/images/featurepost/post3.png"].map((post, index) => (
           <div
             key={index}
             className="max-w-xs sm:max-w-sm bg-white shadow-lg rounded-lg overflow-hidden transform transition-transform duration-300 hover:-translate-y-2 flex flex-col items-center"
@@ -30,7 +30,7 @@ const FeauresPosts = () => {
               </div>
 
               <Image
-                src={`/${blog}`}
+                src={post}
                 alt="blog"
                 width={348}
                 height={300}

@@ -1,6 +1,8 @@
 "use client";
 import Link from "next/link";
 import { useState } from "react";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 import {
   FiPhone,
   FiMail,
@@ -11,13 +13,7 @@ import {
   FiMenu,
   FiX,
 } from "react-icons/fi";
-import {
-  faInstagram,
-  faYoutube,
-  faFacebook,
-  faTwitter,
-} from "@fortawesome/free-brands-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {  faInstagram, faYoutube, faFacebook, faTwitter } from "@fortawesome/free-brands-svg-icons"; // Importing FontAwesome icons
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -28,62 +24,48 @@ const Header = () => {
       <div className="bg-[#252B42] py-4 hidden lg:block">
         <div className="container mx-auto flex justify-between items-center text-white text-sm">
           {/* Contact Information */}
-          <div className="flex items-center gap-4 text-lg">
+          <div className="flex items-center gap-4">
             <div className="flex items-center gap-1">
               <FiPhone />
               <p>(225) 555-0118</p>
             </div>
             <div className="flex items-center gap-1">
-              <FiMail />
+              <FiMail/>
               <p>michelle.rivera@example.com</p>
             </div>
           </div>
 
           {/* Promotion */}
-          <p className="hidden md:block font-extrabold text-xl">
+          <p className="hidden md:block text-sm lg:text-lg font-bold">
             Follow Us and get a chance to win 80% off
           </p>
 
           {/* Social Media Links */}
-          <div className="flex items-center gap-4 text-lg">
-            <p className="hidden md:block">Follow Us:</p>
-            <Link
-              href="https://www.instagram.com/usman_naseem23/?hl=en"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+          <div className="flex items-center gap-4">
+            <p className="hidden md:block text-sm lg:text-lg">Follow Us:</p>
+            <Link href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">
               <FontAwesomeIcon icon={faInstagram} />
             </Link>
-            <Link
-              href="https://www.youtube.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <Link href="https://www.youtube.com" target="_blank" rel="noopener noreferrer">
               <FontAwesomeIcon icon={faYoutube} />
             </Link>
-            <Link
-              href="https://www.facebook.com/profile.php?id=100086418654475"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <Link href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">
               <FontAwesomeIcon icon={faFacebook} />
             </Link>
-            <Link
-              href="https://www.twitter.com"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
+            <Link href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">
               <FontAwesomeIcon icon={faTwitter} />
             </Link>
           </div>
         </div>
       </div>
 
-     {/* Navbar Section */}
-     <div className="bg-white shadow-md border-b-2 border-[#E5E5E5] relative z-40">
+      {/* Navbar Section */}
+      <div className="bg-white shadow-md border-b-2 border-[#E5E5E5] relative z-40">
         <div className="container mx-auto flex items-center justify-between py-4">
           {/* Logo */}
-          <div className="text-4xl font-bold text-[#252B42]">Bandage</div>
+          <div className="text-2xl lg:text-3xl font-bold text-[#252B42]">
+            Bandage
+          </div>
 
           {/* Action Icons (Mobile and Desktop) */}
           <div className="flex items-center gap-4 md:hidden">
@@ -103,9 +85,9 @@ const Header = () => {
 
           {/* Navigation Links */}
           <nav className="hidden md:flex">
-            <ul className="flex gap-8  font-medium text-[#737373] relative text-lg">
+            <ul className="flex gap-6 text-sm lg:text-lg font-medium text-[#737373]">
               <li>
-                <Link href="#" className="hover:text-[#23A6F0] transition-all ">
+                <Link href="#" className="hover:text-[#23A6F0] transition-all">
                   Home
                 </Link>
               </li>
@@ -127,7 +109,10 @@ const Header = () => {
                 </Link>
               </li>
               <li>
-                <Link href="#blog" className="hover:text-[#23A6F0] transition-all">
+                <Link
+                  href="#blog"
+                  className="hover:text-[#23A6F0] transition-all"
+                >
                   Blog
                 </Link>
               </li>
@@ -140,7 +125,10 @@ const Header = () => {
                 </Link>
               </li>
               <li>
-                <Link href="/pages" className="hover:text-[#23A6F0] transition-all">
+                <Link
+                  href="/pages"
+                  className="hover:text-[#23A6F0] transition-all"
+                >
                   Pages
                 </Link>
               </li>
@@ -148,11 +136,13 @@ const Header = () => {
           </nav>
 
           {/* Action Icons for Desktop */}
-          <div className="hidden md:flex items-center gap-6 text-[#23A6F0] ">
-            <button className="text-lg font-medium">Login/Register</button>
-            <FiSearch className="text-lg cursor-pointer" />
-            <FiShoppingCart className="text-lg cursor-pointer" />
-            <FiHeart className="text-lg cursor-pointer" />
+          <div className="hidden md:flex items-center gap-6 text-[#23A6F0]">
+            <button className="text-sm lg:text-lg font-medium ml-3">
+              Login/Register
+            </button>
+            <FiSearch className="text-lg lg:text-xl cursor-pointer" />
+            <FiShoppingCart className="text-lg lg:text-xl cursor-pointer" />
+            <FiHeart className="text-lg lg:text-xl cursor-pointer" />
           </div>
         </div>
 
@@ -169,7 +159,10 @@ const Header = () => {
               </Link>
             </li>
             <li>
-              <Link href="/product" className="hover:text-[#23A6F0] transition-all">
+              <Link
+                href="/product"
+                className="hover:text-[#23A6F0] transition-all"
+              >
                 Product
               </Link>
             </li>

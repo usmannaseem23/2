@@ -109,7 +109,7 @@ const TeamSection: React.FC = () => {
         instagram: "#",
         twitter: "#",
       },
-      image: "/team-member9.png",
+      image: "/images/pages/team-member9.png",
     },
   ];
 

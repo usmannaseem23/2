@@ -12,62 +12,7 @@ const FeatureProducts: React.FC = () => {
       discountedPrice: "$6.48",
       colors: ["bg-[#23A6F0]", "bg-[#23856D]", "bg-[#E77C40]", "bg-[#252B42]"],
     },
-    {
-      image: "/images/bestsellerproduct/boys1.png",
-      name: "Web Design",
-      department: "Marketing Department",
-      originalPrice: "$16.48",
-      discountedPrice: "$6.48",
-      colors: ["bg-[#23A6F0]", "bg-[#23856D]", "bg-[#E77C40]", "bg-[#252B42]"],
-    },
-    {
-      image: "/images/bestsellerproduct/girls2.png",
-      name: "Logo Design",
-      department: "Branding Department",
-      originalPrice: "$16.48",
-      discountedPrice: "$6.48",
-      colors: ["bg-[#23A6F0]", "bg-[#23856D]", "bg-[#E77C40]", "bg-[#252B42]"],
-    },
-    {
-      image: "/images/bestsellerproduct/girls3.png",
-      name: "UI/UX Design",
-      department: "Product Department",
-      originalPrice: "$16.48",
-      discountedPrice: "$6.48",
-      colors: ["bg-[#23A6F0]", "bg-[#23856D]", "bg-[#E77C40]", "bg-[#252B42]"],
-    },
-    {
-      image: "/images/bestsellerproduct/boys2.png",
-      name: "Branding Design",
-      department: "Creative Department",
-      originalPrice: "$16.48",
-      discountedPrice: "$6.48",
-      colors: ["bg-[#23A6F0]", "bg-[#23856D]", "bg-[#E77C40]", "bg-[#252B42]"],
-    },
-    {
-      image: "/images/bestsellerproduct/girls4.png",
-      name: "App Design",
-      department: "Tech Department",
-      originalPrice: "$16.48",
-      discountedPrice: "$6.48",
-      colors: ["bg-[#23A6F0]", "bg-[#23856D]", "bg-[#E77C40]", "bg-[#252B42]"],
-    },
-    {
-      image: "/images/bestsellerproduct/boys3.png",
-      name: "Product Strategy",
-      department: "Sales Department",
-      originalPrice: "$16.48",
-      discountedPrice: "$6.48",
-      colors: ["bg-[#23A6F0]", "bg-[#23856D]", "bg-[#E77C40]", "bg-[#252B42]"],
-    },
-    {
-      image: "/images/bestsellerproduct/boys4.png",
-      name: "Marketing Strategy",
-      department: "Sales Department",
-      originalPrice: "$16.48",
-      discountedPrice: "$6.48",
-      colors: ["bg-[#23A6F0]", "bg-[#23856D]", "bg-[#E77C40]", "bg-[#252B42]"],
-    },
+    // ...other products
   ];
 
   return (
@@ -82,7 +27,6 @@ const FeatureProducts: React.FC = () => {
         </p>
       </div>
 
-      {/* Product Cart Grid */}
       <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-1 mt-6 w-full">
         {products.map((product, index) => (
           <ProductCard key={index} product={product} />
@@ -90,7 +34,6 @@ const FeatureProducts: React.FC = () => {
       </div>
 
       <div className="bg-[#23856D] sm:h-[990px] md:h-[713px] w-full mt-16 pt-7 flex items-center justify-between flex-col md:flex-row">
-        {/* Text Section */}
         <div className="text-white space-y-4 ml-4 sm:ml-12 md:ml-36 text-center sm:text-left">
           <h3 className="text-[20px]">SUMMER 2020</h3>
           <h2 className="text-[40px] sm:text-[50px] md:text-[58px] font-bold">
@@ -100,8 +43,6 @@ const FeatureProducts: React.FC = () => {
             We know how large objects will act, We know <br />
             <span>how objects will act, We know</span>
           </p>
-
-          {/* Price and Button Section */}
           <div className="flex flex-col sm:flex-row items-center gap-4 mt-4 sm:mt-8 pb-7">
             <h3 className="text-[24px] font-bold">{`$16.48`}</h3>
             <button className="text-[14px] font-bold bg-[#2DC071] py-4 px-10 rounded-md hover:bg-green-600 mt-4 sm:mt-0">
@@ -109,33 +50,28 @@ const FeatureProducts: React.FC = () => {
             </button>
           </div>
         </div>
-
-        {/* Image Section */}
         <div className="w-full sm:w-[400px] md:w-[510px] flex-shrink-0">
           <Image
-            src={"/classic.png"}
+            src={"/images/bestsellerproduct/classic.png"}
             alt="classic"
             width={510}
             height={685}
-            className="w-full object-cover"
+            className="w-full object-cover max-w-full"
           />
         </div>
       </div>
 
-      <div className="flex items-center justify-between mt-16 flex-col md:flex-row">
-        {/* Image Section */}
+      <div className="flex flex-col-reverse md:flex-row items-center justify-between mt-16 gap-6 md:gap-0">
         <div className="w-full md:w-auto">
           <Image
-            src={"/universe.png"}
+            src={"/images/bestsellerproduct/universe.png"}
             alt="universe"
             height={704}
             width={682}
-            className="w-full"
+            className="w-full object-cover max-w-full"
           />
         </div>
-
-        {/* Text Section */}
-        <div className="text-center md:text-left w-full md:w-auto mt-6 md:mt-0">
+        <div className="text-center md:text-left w-full md:w-auto">
           <h3 className="text-[#BDBDBD] font-bold text-[16px]">SUMMER 2020</h3>
           <h2 className="text-[#252B42] font-bold text-[30px] sm:text-[40px] mt-8">
             Part of the Neural <br /> Universe
