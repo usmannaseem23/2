@@ -4,7 +4,7 @@ import ProductCard from "@/components/product-card";
 const Cards: React.FC = () => {
   const products: Product[] = [
     {
-      image: "/images/product/card1.png",
+      image: "/images/product/Card1.png",
       name: "Graphic Design",
       department: "English Department",
       originalPrice: "$16.48",
@@ -12,7 +12,7 @@ const Cards: React.FC = () => {
       colors: ["bg-[#23A6F0]", "bg-[#23856D]", "bg-[#E77C40]", "bg-[#252B42]"],
     },
     {
-      image: "/images/product/card2.png",
+      image: "/images/product/Card2.png",
       name: "Web Design",
       department: "Marketing Department",
       originalPrice: "$16.48",
@@ -20,7 +20,7 @@ const Cards: React.FC = () => {
       colors: ["bg-[#23A6F0]", "bg-[#23856D]", "bg-[#E77C40]", "bg-[#252B42]"],
     },
     {
-      image: "/images/product/card3.png",
+      image: "/images/product/Card3.png",
       name: "Logo Design",
       department: "Branding Department",
       originalPrice: "$16.48",
@@ -28,7 +28,7 @@ const Cards: React.FC = () => {
       colors: ["bg-[#23A6F0]", "bg-[#23856D]", "bg-[#E77C40]", "bg-[#252B42]"],
     },
     {
-      image: "/images/product/card4.png",
+      image: "/images/product/Card4.png",
       name: "UI/UX Design",
       department: "Product Department",
       originalPrice: "$16.48",
@@ -36,7 +36,7 @@ const Cards: React.FC = () => {
       colors: ["bg-[#23A6F0]", "bg-[#23856D]", "bg-[#E77C40]", "bg-[#252B42]"],
     },
     {
-      image: "/images/product/card5.png",
+      image: "/images/product/Card5.png",
       name: "Branding Design",
       department: "Creative Department",
       originalPrice: "$16.48",
@@ -44,7 +44,7 @@ const Cards: React.FC = () => {
       colors: ["bg-[#23A6F0]", "bg-[#23856D]", "bg-[#E77C40]", "bg-[#252B42]"],
     },
     {
-      image: "/images/product/card6.png",
+      image: "/images/product/Card6.png",
       name: "App Design",
       department: "Tech Department",
       originalPrice: "$16.48",
@@ -52,7 +52,7 @@ const Cards: React.FC = () => {
       colors: ["bg-[#23A6F0]", "bg-[#23856D]", "bg-[#E77C40]", "bg-[#252B42]"],
     },
     {
-      image: "/images/product/card7.png",
+      image: "/images/product/Card7.png",
       name: "Product Strategy",
       department: "Sales Department",
       originalPrice: "$16.48",
@@ -60,7 +60,7 @@ const Cards: React.FC = () => {
       colors: ["bg-[#23A6F0]", "bg-[#23856D]", "bg-[#E77C40]", "bg-[#252B42]"],
     },
     {
-      image: "/images/product/card8.png",
+      image: "/images/product/Card8.png",
       name: "Marketing Strategy",
       department: "Sales Department",
       originalPrice: "$16.48",

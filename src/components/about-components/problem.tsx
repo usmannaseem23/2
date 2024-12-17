@@ -51,7 +51,7 @@ const Problem = () => {
 
       {/* Image Section */}
       <div className="mt-16 sm:mt-20 flex justify-center items-center mx-6 sm:mx-36">
-        <Image src={"/images/aboutus/problem.png"} alt="problem" width={989} height={540} />
+        <Image src={"/images/aboutus/Problem.png"} alt="problem" width={989} height={540} />
       </div>
     </div>
   );

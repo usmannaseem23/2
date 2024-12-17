@@ -29,7 +29,7 @@ const TeamSection: React.FC = () => {
         instagram: "#",
         twitter: "#",
       },
-      image: "/images/pages/team-member1.png",
+      image: "/images/pages/Team-member1.png",
     },
     {
       name: "Jane Smith",
@@ -39,7 +39,7 @@ const TeamSection: React.FC = () => {
         instagram: "#",
         twitter: "#",
       },
-      image: "/images/pages/team-member2.png",
+      image: "/images/pages/Team-member2.png",
     },
     {
       name: "Sam Wilson",
@@ -49,7 +49,7 @@ const TeamSection: React.FC = () => {
         instagram: "#",
         twitter: "#",
       },
-      image: "/images/pages/team-member3.png",
+      image: "/images/pages/Team-member3.png",
     },
     {
       name: "Emily Davis",
@@ -59,7 +59,7 @@ const TeamSection: React.FC = () => {
         instagram: "#",
         twitter: "#",
       },
-      image: "/images/pages/team-member4.png",
+      image: "/images/pages/Team-member4.png",
     },
     {
       name: "Michael Brown",
@@ -69,7 +69,7 @@ const TeamSection: React.FC = () => {
         instagram: "#",
         twitter: "#",
       },
-      image: "/images/pages/team-member5.png", // PNG image URL
+      image: "/images/pages/Team-member5.png", // PNG image URL
     },
     {
       name: "Sarah Lee",
@@ -79,7 +79,7 @@ const TeamSection: React.FC = () => {
         instagram: "#",
         twitter: "#",
       },
-      image: "/images/pages/team-member6.png",
+      image: "/images/pages/Team-member6.png",
     },
     {
       name: "Chris Martin",
@@ -89,7 +89,7 @@ const TeamSection: React.FC = () => {
         instagram: "#",
         twitter: "#",
       },
-      image: "/images/pages/team-member7.png",
+      image: "/images/pages/Team-member7.png",
     },
     {
       name: "Laura Johnson",
@@ -99,7 +99,7 @@ const TeamSection: React.FC = () => {
         instagram: "#",
         twitter: "#",
       },
-      image: "/images/pages/team-member8.png",
+      image: "/images/pages/Team-member8.png",
     },
     {
       name: "David Clark",
@@ -109,7 +109,7 @@ const TeamSection: React.FC = () => {
         instagram: "#",
         twitter: "#",
       },
-      image: "/images/pages/team-member9.png",
+      image: "/images/pages/Team-member9.png",
     },
   ];
 

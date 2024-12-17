@@ -64,7 +64,7 @@ const ContactUs = () => {
       {/* Image Section */}
       <div className="w-full md:w-1/2 mt-8 md:mt-0">
         <Image
-          src="/images/contactus/contactus.png"
+          src="/images/contactus/Contactus.png"
           alt="aboutus"
           height={280}
           width={415}
