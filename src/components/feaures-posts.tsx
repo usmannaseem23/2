@@ -17,7 +17,7 @@ const FeauresPosts = () => {
       {/* Flex container for centering the posts */}
       <div className="flex flex-wrap justify-center items-center gap-8">
         {/* Post Template for Reusability */}
-        {["/images/featurepost/Post1.png", "/images/featurepost/Post2.png", "/images/featurepost/Post3.png"].map((Post, index) => (
+        {["/images/featurepost/post1.png", "/images/featurepost/post2.png", "/images/featurepost/post3.png"].map((post, index) => (
           <div
             key={index}
             className="max-w-xs sm:max-w-sm bg-white shadow-lg rounded-lg overflow-hidden transform transition-transform duration-300 hover:-translate-y-2 flex flex-col items-center"
@@ -30,7 +30,7 @@ const FeauresPosts = () => {
               </div>
 
               <Image
-                src={Post}
+                src={post}
                 alt="blog"
                 width={348}
                 height={300}

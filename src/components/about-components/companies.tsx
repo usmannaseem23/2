@@ -10,7 +10,7 @@ const BigCompannies = () => {
             <p className="text-[#737373] text-[14px] mt-3">the two major realms of Classical physics: Newtonian mechanics </p>
         </div>
         <div className='mt-12 flex justify-center items-center'>
-            <Image src={"/images/product/Companies.png"} alt='companies' width={1054} height={175} />
+            <Image src={"/images/product/companies.png"} alt='companies' width={1054} height={175} />
         </div> 
     </div>
   )

@@ -17,7 +17,7 @@ const EditorsPics = () => {
       <div className="hidden sm:flex justify-center items-start gap-6 mt-6">
         {/* Men Image with Fixed Size White Div */}
         <div className="relative">
-          <Image src="/images/editor/Men.png" alt="men" width={509} height={500} />
+          <Image src="/images/editor/men.png" alt="men" width={509} height={500} />
           <div className="absolute bottom-4 left-4 w-[170px] h-[48px] bg-white flex items-center justify-center">
             <span className="text-[#252B42] font-bold text-lg">MEN</span>
           </div>
@@ -25,7 +25,7 @@ const EditorsPics = () => {
 
         {/* Women Image with Fixed Size White Div */}
         <div className="relative">
-          <Image src="/images/editor/Womens.png" alt="women" width={240} height={500} />
+          <Image src="/images/editor/womens.png" alt="women" width={240} height={500} />
           <div className="absolute bottom-4 left-4 w-[170px] h-[48px] bg-white flex items-center justify-center">
             <span className="text-[#252B42] font-bold text-lg">WOMEN</span>
           </div>
@@ -35,7 +35,7 @@ const EditorsPics = () => {
         <div className="flex flex-col gap-6">
           {/* Accessories Image with Fixed Size White Div */}
           <div className="relative">
-            <Image src="/images/editor/Accessories.png" alt="accessories" width={240} height={242} />
+            <Image src="/images/editor/accessories.png" alt="accessories" width={240} height={242} />
             <div className="absolute bottom-4 left-4 w-[170px] h-[48px] bg-white flex items-center justify-center">
               <span className="text-[#252B42] font-bold text-lg">ACCESSORIES</span>
             </div>
@@ -43,7 +43,7 @@ const EditorsPics = () => {
 
           {/* Kids Image with Fixed Size White Div */}
           <div className="relative">
-            <Image src="/images/editor/Kids.png" alt="kids" width={240} height={242} />
+            <Image src="/images/editor/kids.png" alt="kids" width={240} height={242} />
             <div className="absolute bottom-4 left-4 w-[170px] h-[48px] bg-white flex items-center justify-center">
               <span className="text-[#252B42] font-bold text-lg">KIDS</span>
             </div>
@@ -55,7 +55,7 @@ const EditorsPics = () => {
       <div className="sm:hidden flex flex-col items-center justify-center gap-6 mt-6">
         {/* Men Image with Fixed Size White Div */}
         <div className="relative w-[90%] sm:w-full">
-          <Image src={"/images/editor/Men.png"} alt="men" width={509} height={500} />
+          <Image src={"/images/editor/men.png"} alt="men" width={509} height={500} />
           <div className="absolute bottom-4 left-4 w-[170px] h-[48px] bg-white flex items-center justify-center">
             <span className="text-[#252B42] font-bold text-lg">MEN</span>
           </div>
@@ -63,7 +63,7 @@ const EditorsPics = () => {
 
         {/* Women Image with Fixed Size White Div */}
         <div className="relative w-[90%] sm:w-full ml-24">
-          <Image src={"/images/editor/Womens.png"} alt="women" width={240} height={500} />
+          <Image src={"/images/editor/womens.png"} alt="women" width={240} height={500} />
           <div className="absolute bottom-4 left-4 w-[170px] h-[48px] bg-white flex items-center justify-center">
             <span className="text-[#252B42] font-bold text-lg">WOMEN</span>
           </div>
@@ -73,7 +73,7 @@ const EditorsPics = () => {
         <div className="flex flex-col gap-6 w-[90%] sm:w-full">
           {/* Accessories Image with Fixed Size White Div */}
           <div className="relative ml-12">
-            <Image src={"/images/editor/Accessories.png"} alt="accessories" width={240} height={242} />
+            <Image src={"/images/editor/accessories.png"} alt="accessories" width={240} height={242} />
             <div className="absolute bottom-4 left-4 w-[170px] h-[48px] bg-white flex items-center justify-center">
               <span className="text-[#252B42] font-bold text-lg">ACCESSORIES</span>
             </div>
@@ -81,7 +81,7 @@ const EditorsPics = () => {
 
           {/* Kids Image with Fixed Size White Div */}
           <div className="relative ml-12">
-            <Image src={"/images/editor/Kids.png"} alt="kids" width={240} height={242} />
+            <Image src={"/images/editor/kids.png"} alt="kids" width={240} height={242} />
             <div className="absolute bottom-4 left-4 w-[170px] h-[48px] bg-white flex items-center justify-center">
               <span className="text-[#252B42] font-bold text-lg">KIDS</span>
             </div>
