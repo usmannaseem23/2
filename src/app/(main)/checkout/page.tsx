@@ -49,6 +49,8 @@ export default function Checkout() {
       return;
     }
 
+    
+
     setIsLoading(true); // Start loading
 
     try {
