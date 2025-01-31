@@ -1,16 +1,22 @@
-import EditorsPics from "@/components/editors-pics";
-import FeatureProducts from "@/components/featuresproducts";
-import FeauresPosts from "@/components/feaures-posts";
-import Hero from "@/components/hero";
-import Header from "@/components/header";
-import Footer from "@/components/footer";
+import EditorsPics from "@/components/home-components/editors-pics";
+import FeatureProducts from "@/components/home-components/featuresproducts";
+import FeauresPosts from "@/components/home-components/feaures-posts";
+import Hero from "@/components/home-components/hero";
+import Header from "@/components/home-components/header";
+import Footer from "@/components/home-components/footer";
+import { ClerkProvider } from "@clerk/nextjs";
 
 
 export default function Home() {
   return (
     <>
-    <Header />
-    <Hero />
+   <ClerkProvider
+        publishableKey={process.env.NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY}
+      >
+        <Header />
+      </ClerkProvider>
+      <Hero />
+      
      <EditorsPics />
     <FeatureProducts />
     <FeauresPosts /> 

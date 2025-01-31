@@ -93,7 +93,7 @@ const Footer = () => {
 
         {/* Bottom Text */}
         <div className="mt-16 text-left bg-[#FAFAFA] py-9">
-          <p className="text-[#737373] font-bold text-[14px]">Made With Love All Rights Reserved</p>
+          <p className="text-[#737373] font-bold text-[14px]">Made With Love By Finland .All Rights Reserved</p>
         </div>
       </div>
     </footer>

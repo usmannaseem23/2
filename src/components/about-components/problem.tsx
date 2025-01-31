@@ -3,9 +3,9 @@ import React from "react";
 
 const Problem = () => {
   return (
-    <div className="flex flex-col items-center mt-11 px-6">
+    <div className="flex flex-col items-center mt-11 px-6 wrapper">
       {/* Heading and Paragraph Section */}
-      <div className="flex flex-col sm:flex-row w-full items-start gap-6 py-8 mx-4 sm:mx-20">
+      <div className="flex flex-col sm:flex-row w-full items-start gap-6 py-8 mx-4 px-0 lg:px-20 sm:mx-20">
         <div>
           <h3 className="text-[#E74040] text-[14px] mb-8">Problems trying</h3>
           <h2 className="font-bold text-[24px] text-[#252B42] sm:mt-2">
@@ -51,7 +51,7 @@ const Problem = () => {
 
       {/* Image Section */}
       <div className="mt-16 sm:mt-20 flex justify-center items-center mx-6 sm:mx-36">
-        <Image src={"/images/aboutus/problem.png"} alt="problem" width={989} height={540} />
+        <Image src={"/problem.png"} alt="problem" width={989} height={540} />
       </div>
     </div>
   );
