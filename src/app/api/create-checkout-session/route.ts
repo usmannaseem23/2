@@ -11,20 +11,11 @@ interface CartItem {
   quantity: number;
 }
 
+const isProduction = process.env.NODE_ENV === "production";
+
 export async function POST(request: Request) {
   try {
     const { cartItems }: { cartItems: CartItem[] } = await request.json();
-
-    // Environment-based URL selection
-    const successUrl =
-      process.env.NODE_ENV === "development"
-        ? "http://localhost:3000/success"
-        : "https://ui-ux-hackhathon-e-commerce.vercel.app/success";
-
-    const cancelUrl =
-      process.env.NODE_ENV === "development"
-        ? "http://localhost:3000/cart"
-        : "https://ui-ux-hackhathon-e-commerce.vercel.app/cart";
 
     const session = await stripe.checkout.sessions.create({
       payment_method_types: ["card"],
@@ -39,8 +30,12 @@ export async function POST(request: Request) {
         quantity: item.quantity,
       })),
       mode: "payment",
-      success_url: successUrl,
-      cancel_url: cancelUrl,
+      success_url: isProduction
+        ? "https://ui-ux-hackhathon-e-commerce.vercel.app/success"
+        : "http://localhost:3000/success",
+      cancel_url: isProduction
+        ? "https://ui-ux-hackhathon-e-commerce.vercel.app/cart"
+        : "http://localhost:3000/cart",
     });
 
     return NextResponse.json({ sessionId: session.id });
