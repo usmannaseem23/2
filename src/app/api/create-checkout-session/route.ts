@@ -15,6 +15,17 @@ export async function POST(request: Request) {
   try {
     const { cartItems }: { cartItems: CartItem[] } = await request.json();
 
+    // Environment-based URL selection
+    const successUrl =
+      process.env.NODE_ENV === "development"
+        ? "http://localhost:3000/success"
+        : "https://ui-ux-hackhathon-e-commerce.vercel.app/success";
+
+    const cancelUrl =
+      process.env.NODE_ENV === "development"
+        ? "http://localhost:3000/cart"
+        : "https://ui-ux-hackhathon-e-commerce.vercel.app/cart";
+
     const session = await stripe.checkout.sessions.create({
       payment_method_types: ["card"],
       line_items: cartItems.map((item: CartItem) => ({
@@ -28,8 +39,8 @@ export async function POST(request: Request) {
         quantity: item.quantity,
       })),
       mode: "payment",
-      success_url: "https://ui-ux-hackhathon-e-commerce.vercel.app/success",
-      cancel_url: "https://ui-ux-hackhathon-e-commerce.vercel.app/cart",
+      success_url: successUrl,
+      cancel_url: cancelUrl,
     });
 
     return NextResponse.json({ sessionId: session.id });

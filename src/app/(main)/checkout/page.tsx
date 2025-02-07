@@ -49,8 +49,6 @@ export default function Checkout() {
       return;
     }
 
-    
-
     setIsLoading(true); // Start loading
 
     try {
@@ -84,8 +82,33 @@ export default function Checkout() {
       const { sessionId } = await response.json();
 
       if (sessionId) {
-        // Send email to the user
-       
+        // Send the order data to Sanity
+        const orderData = {
+          _type: 'order',
+          fullName: data.name,
+          email: data.email,
+          address: data.address,
+          phone: data.phone,
+          totalAmount: totalPrice,
+          products: cartItems.map(item => ({
+            _type: 'reference',
+            _ref: item.id, // Assuming product IDs are stored in Sanity
+          })),
+        };
+
+        const sanityResponse = await fetch('/api/saveOrder', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify(orderData),
+        });
+
+        if (!sanityResponse.ok) {
+          console.error("Failed to save order data to Sanity");
+          setIsLoading(false); // Stop loading on error
+          return;
+        }
 
         // Redirect to Stripe Checkout
         const { error } = await stripe.redirectToCheckout({ sessionId });
@@ -243,9 +266,9 @@ export default function Checkout() {
                   <button
                     type="submit"
                     disabled={isLoading} // Disable button when loading
-                    className="w-full mt-6 bg-gradient-to-r from-[#3B82F6] to-[#1D4ED8] hover:from-[#1D4ED8] hover:to-[#3B82F6] text-white font-bold py-3 px-6 rounded-lg transition-all ease-in-out transform hover:scale-105 disabled:opacity-75 disabled:cursor-not-allowed"
+                    className="w-full mt-6 bg-[#3B82F6] text-white font-bold py-3 rounded-lg focus:outline-none disabled:opacity-50"
                   >
-                    {isLoading ? "Loading..." : "Place Order"} {/* Show loading text */}
+                    {isLoading ? "Processing..." : "Proceed to Payment"}
                   </button>
                 </form>
               </div>
