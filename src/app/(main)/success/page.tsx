@@ -15,14 +15,14 @@ export default function PaymentSuccessPage() {
           Thank you for your purchase. Your payment has been processed
           successfully.
         </p>
-        <div className="text-center">
+        {/* <div className="text-center">
           <Link
             href="/generate-tracking"
             className="bg-blue-500 hover:bg-blue-600 text-white font-bold py-3 px-6 rounded-full transition duration-300 ease-in-out transform hover:scale-105"
           >
             Generate Tracking Number!{" "}
           </Link>
-        </div>
+        </div> */}
       </div>
     </div>
   );
